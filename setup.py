@@ -18,23 +18,23 @@ requires = [
     "unittest2",
 ]
 
-assert (
-    "\\npytorch " in str(sp.check_output("conda list pytorch", shell=True))
-    or '\\ntorch ' in str(sp.check_output("pip list", shell=True))
-), (
-    "\n\n**********************************************************************\n"
-    + "ERROR: PYTORCH INSTALLATION NOT PRESENT" +
-    "\n**********************************************************************\n"
-    "The correct brains-py setup requires to have pytorch installed prior\n" +
-    "to the installation of brains-py. The installation of pytorch has to\n" +
-    "be done manually, as it is computer-dependent (cpu or gpu). \n" +
-    #"\n\n----------------------------------------------------------------------\n"
-    "\n * \rPlease follow the installation instructions for installing pytorch\n"
-    +
-    "before installing brains-py. More information at:\nhttps://pytorch.org/ \n"
-    +
-    "\n**********************************************************************\n\n"
-)
+# assert (
+#     "\\npytorch " in str(sp.check_output("conda list pytorch", shell=True))
+#     or '\\ntorch ' in str(sp.check_output("pip list", shell=True))
+# ), (
+#     "\n\n**********************************************************************\n"
+#     + "ERROR: PYTORCH INSTALLATION NOT PRESENT" +
+#     "\n**********************************************************************\n"
+#     "The correct brains-py setup requires to have pytorch installed prior\n" +
+#     "to the installation of brains-py. The installation of pytorch has to\n" +
+#     "be done manually, as it is computer-dependent (cpu or gpu). \n" +
+#     #"\n\n----------------------------------------------------------------------\n"
+#     "\n * \rPlease follow the installation instructions for installing pytorch\n"
+#     +
+#     "before installing brains-py. More information at:\nhttps://pytorch.org/ \n"
+#     +
+#     "\n**********************************************************************\n\n"
+# )
 
 if platform.system() == "Windows":
     requires.append("pypiwin32")
