@@ -10,10 +10,10 @@ requires = [
     "nidaqmx",
     "matplotlib==3.4.2",
     # Packages for linting and code formatting
-    "mypy==0.910",
-    "mypy-extensions==0.4.3",
-    "flake8==3.9.2",
-    "yapf==0.31.0",
+    # "mypy==0.910",
+    # "mypy-extensions==0.4.3",
+    # "flake8==3.9.2",
+    # "yapf==0.31.0",
     # Packages for testing
     "unittest2",
 ]
